@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Professeurs - Mathématiques</title>
+    <title>Nos Professeurs | ProfDirect</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-slate-50 font-sans">
 
-    <nav class="bg-white shadow-lg p-6 mb-10 flex items-center">
-        <a href="ecole.html" class="text-blue-600 font-bold mr-4">← Retour</a>
-        <h1 class="text-2xl font-bold text-gray-800">Nos Professeurs de Mathématiques</h1>
+    <nav class="p-6 flex justify-between items-center">
+        <a href="ecole.html" class="text-slate-500 hover:text-blue-600 transition font-medium">
+            <i class="fas fa-chevron-left mr-2 text-xs"></i> Matières
+        </a>
     </nav>
 
-    <div class="max-w-4xl mx-auto space-y-4 px-4">
-        <div class="bg-white p-6 rounded-xl shadow flex justify-between items-center">
-            <div>
-                <h2 class="text-xl font-bold">Jean Dupont</h2>
-                <p class="text-gray-600">Expert en Algèbre - 25€/h</p>
-            </div>
-            <a href="profil.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Voir le Profil</a>
-        </div>
+    <main class="max-w-2xl mx-auto px-6">
+        <h1 class="text-2xl font-bold text-slate-900 mb-8">Profs de Maths disponibles</h1>
 
-        <div class="bg-white p-6 rounded-xl shadow flex justify-between items-center">
-            <div>
-                <h2 class="text-xl font-bold">Sarah Cohen</h2>
-                <p class="text-gray-600">Spécialiste Bac S - 30€/h</p>
+        <div class="space-y-4">
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex items-center">
+                <img src="https://i.pravatar.cc/150?u=jean" alt="Jean" class="w-16 h-16 rounded-full object-cover mr-5">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <h2 class="font-bold text-lg text-slate-800">Jean Dupont</h2>
+                        <span class="bg-blue-50 text-blue-700 text-xs font-bold px-2 py-1 rounded">25€/h</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mb-3">Agrégé de mathématiques, 10 ans d'expérience.</p>
+                    <div class="flex items-center text-xs text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span class="ml-2 text-slate-400 font-medium">(12 avis)</span>
+                    </div>
+                    <a href="profil.html" class="block text-center bg-slate-900 text-white text-sm font-bold py-2 rounded-xl hover:bg-blue-600 transition">Voir le Profil</a>
+                </div>
             </div>
-            <a href="profil.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Voir le Profil</a>
         </div>
-    </div>
-
+    </main>
 </body>
 </html>
